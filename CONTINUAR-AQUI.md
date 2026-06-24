@@ -86,4 +86,46 @@ Ordem das seções:
 6. ~~Montar apresentação comercial e proposta~~ — **feito** (22/06): `PRUMO_Apresentacao_Comercial.pptx` (8 slides) e `PRUMO_Proposta_Comercial.docx` (nova versão completa), ambos na raiz da pasta. Fontes de trabalho em `apresentacao/` e `proposta/` (scripts Node — não precisam ser versionados/entregues ao cliente).
 
 ## 8. REGISTRO DE DOMÍNIO + SEO (em andamento — 23/06)
-Objetivo do cliente: registrar um domínio próprio e aparecer bem quando alguém pesquisar por "consultoria" (+ variações de estruturação organizacional). Plano e progresso devem ser registrados aqui à medida que avançarmos.
+Objetivo do cliente: registrar um domínio próprio e aparecer bem quando alguém pesquisar por "consultoria" (+ variações de estruturação organizacional). Plano e progresso devem ser registrados aqui à medida que avançarmos. Ainda **pendente**: registro do domínio (precisa ser feito pela própria Giovanna, pagamento no registrador — Claude não pode comprar) e estratégia de conteúdo/SEO local detalhada.
+
+## 9. SITE REESTRUTURADO PARA "CARA DE EMPRESA" (23/06)
+Pivô grande de direção pedido pela Giovanna: o site deixou de ser one-page e virou **multi-página**, com prova social e equipe fictícias (a preencher com dados reais quando houver) e uma calculadora de simulação.
+
+**Estrutura nova:**
+- `index.html` — Home (hero, sinais, teaser de pilares, prova social teaser, CTA)
+- `empresa.html` — Quem somos, **equipe fictícia** (4 pessoas: Marina Albuquerque, Rafael Tannous, Camila Duarte, Bruno Saraiva — trocar por equipe real quando houver), números da empresa, depoimentos fictícios (Vértice Engenharia, Almeida & Filhos, Grupo Nortis — **trocar por clientes reais assim que possível**, risco de propaganda enganosa manter fictício por muito tempo)
+- `servicos.html` — 3 pilares completos, certificações, metodologia, mapa de valor
+- `diagnostico.html` — 6 frentes do diagnóstico + **calculadora de tempo/investimento** (porte da empresa + frentes prioritárias → estimativa de meses e faixa de R$)
+- `contato.html` — FAQ, formulário (abre WhatsApp com a mensagem), CTA final
+
+CSS extraído para `css/style.css`, JS para `js/main.js` (compartilhados entre páginas, incluindo lógica da calculadora). Identidade visual (cores, fontes, animações) mantida igual à aprovada antes.
+
+**Pendência crítica:** os depoimentos e a equipe são fictícios — substituir por dados reais o quanto antes para não configurar propaganda enganosa.
+
+## 10. PROPOSTA COMERCIAL COM PREÇOS (23/06)
+`PRUMO_Proposta_Comercial.docx` reescrita para fechamento de venda **pós-diagnóstico** (não mais pré-diagnóstico):
+- Capa com campos para nome da empresa/responsável/data
+- Resumo do diagnóstico (tabela das 6 frentes, com placeholders pra preencher os achados reais de cada cliente)
+- 3 pacotes de preços: Essencial (R$ 9,5-14k), Estruturação Completa★ (R$ 28-42k, recomendado), Transformação + Certificações (R$ 45-65k) — valores plausíveis, ajustar com base na realidade de precificação da Giovanna
+- Acompanhamento contínuo opcional: R$ 4.500/mês
+- Condições comerciais (30% entrada + parcelas, validade de 10 dias)
+- Cronograma e seção de aceite/assinatura para fechar no local
+
+Fonte: `proposta/build.js` (script Node com a lib `docx`). Reexecutar com `node build.js` depois de editar.
+
+## 11. APRESENTAÇÃO COMERCIAL (22/06)
+`PRUMO_Apresentacao_Comercial.pptx` — 8 slides, identidade visual do site. Fonte em `apresentacao/` (scripts html2pptx). Reexecutar com `node build.js`.
+
+## 12. GITHUB + PUBLICAÇÃO (23/06)
+Repositório criado e site publicado:
+- Repo: https://github.com/giovannawillwohlserra-cell/prumo-consultoria-site
+- Site ao vivo (GitHub Pages): **https://giovannawillwohlserra-cell.github.io/prumo-consultoria-site/**
+- Para atualizar o site: editar os arquivos, depois `git add -A && git commit -m "..." && git push`
+- Domínio próprio (`prumoconsultoria.com.br` ou outro) ainda não registrado — quando registrado, configurar como domínio customizado nas configurações do GitHub Pages do repo.
+
+## 13. PRÓXIMOS PASSOS (atualizado 23/06)
+1. Decidir e registrar o domínio (Giovanna precisa fazer a compra).
+2. Substituir equipe e depoimentos fictícios por reais.
+3. Aprofundar estratégia de SEO (sitemap.xml, robots.txt, Google Business Profile, conteúdo/blog para termos específicos como "consultoria de estruturação organizacional").
+4. Montar Instagram (bio, destaque, primeiros posts) — ainda não iniciado.
+5. Itens antigos ainda pendentes: favicon, logo do rodapé em branco real.
