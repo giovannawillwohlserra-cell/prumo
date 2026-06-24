@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Diagnóstico e simulador — Prumo Consultoria</title>
+<meta name="description" content="Conheça as seis frentes do diagnóstico Prumo e simule o tempo e o investimento estimados para estruturar a sua empresa." />
+<meta name="author" content="Prumo Consultoria" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=Sacramento&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header id="header">
+  <div class="container nav">
+    <a href="index.html" class="brand" id="brand" aria-label="Prumo Consultoria">
+      <img src="logo.png" alt="Prumo Consultoria" onerror="document.getElementById('brand').classList.add('no-img');document.querySelectorAll('.brand').forEach(b=>b.classList.add('no-img'))" />
+      <span class="wordmark">Prumo</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Início</a>
+      <a href="empresa.html">A empresa</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="diagnostico.html" class="active">Diagnóstico</a>
+      <a href="contato.html">Contato</a>
+      <a href="https://wa.me/5571996921513?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20reuni%C3%A3o%20diagn%C3%B3stica%20com%20a%20Prumo" target="_blank" rel="noopener" class="btn btn-gold nav-cta">Agendar diagnóstico</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="progress" id="progress"></div>
+
+<section class="pagehero">
+  <div class="container">
+    <span class="crumb"><a href="index.html">Início</a> / Diagnóstico</span>
+    <h1>A Prumo não começa vendendo. Começa diagnosticando.</h1>
+    <p class="sub">Antes de propor qualquer solução, conduzimos um diagnóstico estruturado em seis frentes — para que os sócios enxerguem, com clareza, os gargalos que hoje limitam o crescimento.</p>
+  </div>
+</section>
+
+<!-- ============ 6 FRENTES ============ -->
+<section class="diag" id="frentes">
+  <div class="container">
+    <div class="diag-grid stagger">
+      <div class="diag-card">
+        <svg class="di" viewBox="0 0 24 24" fill="none" stroke="#B8995F" stroke-width="1.5"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6"/></svg>
+        <h4>Estrutura</h4><p>A organização atual suporta o tamanho — e o próximo passo — da empresa?</p>
+      </div>
+      <div class="diag-card">
+        <svg class="di" viewBox="0 0 24 24" fill="none" stroke="#B8995F" stroke-width="1.5"><circle cx="12" cy="7" r="3.5"/><path d="M5 21c0-3.9 3.1-6.5 7-6.5s7 2.6 7 6.5"/></svg>
+        <h4>Dependência dos sócios</h4><p>Quanto da operação ainda depende diretamente de você?</p>
+      </div>
+      <div class="diag-card">
+        <svg class="di" viewBox="0 0 24 24" fill="none" stroke="#B8995F" stroke-width="1.5"><path d="M4 20v-3a4 4 0 0 1 4-4h2"/><circle cx="9" cy="7" r="3"/><path d="M15 11l2 2 4-4"/></svg>
+        <h4>Liderança</h4><p>Seus líderes estão preparados para o ritmo atual do negócio?</p>
+      </div>
+      <div class="diag-card">
+        <svg class="di" viewBox="0 0 24 24" fill="none" stroke="#B8995F" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>
+        <h4>Processos</h4><p>O que faz a empresa funcionar está mapeado — ou só na cabeça das pessoas?</p>
+      </div>
+      <div class="diag-card">
+        <svg class="di" viewBox="0 0 24 24" fill="none" stroke="#B8995F" stroke-width="1.5"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.2"/><path d="M3.5 20c0-3 2.4-5.2 5.5-5.2S14.5 17 14.5 20"/><path d="M15 14.6c2.4.2 4.5 2 4.5 4.4"/></svg>
+        <h4>Pessoas</h4><p>Cada pessoa está na posição em que rende mais? Avaliamos com base na psicologia positiva.</p>
+      </div>
+      <div class="diag-card">
+        <svg class="di" viewBox="0 0 24 24" fill="none" stroke="#B8995F" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 12l4-3M12 12v5"/></svg>
+        <h4>Alinhamento estratégico</h4><p>A estratégia está clara e se transformando em execução no dia a dia?</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CALCULADORA ============ -->
+<section class="bg-cream" id="calculadora">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Simulador</span>
+      <h2>Simule o tempo e o investimento da sua estruturação.</h2>
+      <p class="lead">Uma estimativa inicial — porte da empresa e frentes prioritárias — para você ter uma referência antes da reunião diagnóstica. Os valores finais são sempre definidos após o diagnóstico completo.</p>
+    </div>
+    <div class="calc reveal">
+      <form id="calcForm" onsubmit="return false">
+        <div class="calc-field">
+          <label for="calcSize">Porte da empresa</label>
+          <select id="calcSize">
+            <option value="pequena">Pequena — até 20 colaboradores</option>
+            <option value="media" selected>Média — 21 a 80 colaboradores</option>
+            <option value="grande">Grande — mais de 80 colaboradores</option>
+          </select>
+        </div>
+        <div class="calc-field">
+          <label>Frentes prioritárias</label>
+          <div class="calc-checks">
+            <label><input type="checkbox" value="lideranca" checked> Liderança</label>
+            <label><input type="checkbox" value="processos" checked> Processos</label>
+            <label><input type="checkbox" value="estrategia"> Estratégia e alinhamento</label>
+            <label><input type="checkbox" value="certificacoes"> Certificações (ESG, LGPD, Compliance)</label>
+          </div>
+        </div>
+      </form>
+      <div class="calc-result">
+        <div class="rl">Estimativa para empresa de porte</div>
+        <div class="rv" id="calcSizeLabel" style="font-size:1.1rem">média — 21 a 80 colaboradores</div>
+        <div class="rdiv"></div>
+        <div class="rl">Tempo estimado de estruturação</div>
+        <div class="rv" id="calcMonths">—</div>
+        <div class="rdiv"></div>
+        <div class="rl">Investimento estimado</div>
+        <div class="rv"><span id="calcInvestMin">—</span> <small>a</small> <span id="calcInvestMax"></span></div>
+        <p class="note">Considera diagnóstico já concluído. Faixa de referência — o valor exato é definido na proposta, após o diagnóstico completo.</p>
+        <a href="https://wa.me/5571996921513?text=Ol%C3%A1%2C%20fiz%20a%20simula%C3%A7%C3%A3o%20no%20site%20e%20quero%20agendar%20uma%20reuni%C3%A3o%20diagn%C3%B3stica" target="_blank" rel="noopener" class="btn btn-gold">Quero confirmar com um diagnóstico <span class="arr">→</span></a>
+      </div>
+    </div>
+    <div class="diag-cta reveal" style="margin-top:30px">
+      <div>
+        <h3>Descubra onde sua estrutura está travando o crescimento.</h3>
+        <p>Uma reunião diagnóstica objetiva, conduzida pela Prumo, para identificar os gargalos que limitam o próximo nível da sua empresa.</p>
+      </div>
+      <a href="https://wa.me/5571996921513?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20reuni%C3%A3o%20diagn%C3%B3stica%20com%20a%20Prumo" target="_blank" rel="noopener" class="btn btn-gold">Agendar diagnóstico <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="brand">
+          <img src="logo.png" alt="Prumo Consultoria" onerror="this.parentElement.classList.add('no-img')" />
+          <span class="wordmark">Prumo</span>
+        </a>
+        <p>A estrutura que sustenta o próximo nível de resultados. Lideranças, processos e alinhamento para empresas em crescimento.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Navegação</h5>
+        <a href="empresa.html">A empresa</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="diagnostico.html">Diagnóstico</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="foot-col">
+        <h5>Atuação</h5>
+        <a href="servicos.html#pilares">Liderança, processos e estratégia</a>
+        <a href="servicos.html#certificacoes">ESG · LGPD · Compliance</a>
+        <a href="servicos.html#certificacoes">Suporte GPTW</a>
+        <a href="diagnostico.html">Diagnóstico</a>
+      </div>
+      <div class="foot-col">
+        <h5>Contato</h5>
+        <a href="https://wa.me/5571996921513?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20reuni%C3%A3o%20diagn%C3%B3stica%20com%20a%20Prumo" target="_blank" rel="noopener">Agendar diagnóstico</a>
+        <a href="mailto:atprumo@gmail.com">atprumo@gmail.com</a>
+        <a href="index.html">Voltar ao topo</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Prumo Consultoria. Todos os direitos reservados.</span>
+      <span>Consultoria de estruturação organizacional · Brasil</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

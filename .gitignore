@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+apresentacao/node_modules/
+proposta/node_modules/
+apresentacao/package-lock.json
+proposta/package-lock.json
+.claude/
