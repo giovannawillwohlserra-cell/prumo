@@ -63,6 +63,8 @@ if(calcForm){
       document.getElementById('calcMonths').textContent='—';
       document.getElementById('calcInvestMin').textContent='Selecione ao menos uma frente';
       document.getElementById('calcInvestMax').textContent='';
+      document.getElementById('calcInvestTotalMin').textContent='—';
+      document.getElementById('calcInvestTotalMax').textContent='';
       return;
     }
     let months=1.5; // diagnóstico já considerado concluído
@@ -74,8 +76,10 @@ if(calcForm){
     });
     months=Math.round(months);
     document.getElementById('calcMonths').textContent=months+' meses';
-    document.getElementById('calcInvestMin').textContent=fmtBRL(investMin);
-    document.getElementById('calcInvestMax').textContent=fmtBRL(investMax);
+    document.getElementById('calcInvestMin').textContent=fmtBRL(investMin/12);
+    document.getElementById('calcInvestMax').textContent=fmtBRL(investMax/12);
+    document.getElementById('calcInvestTotalMin').textContent=fmtBRL(investMin);
+    document.getElementById('calcInvestTotalMax').textContent=fmtBRL(investMax);
     document.getElementById('calcSizeLabel').textContent=SIZE_LABEL[size];
   }
 
