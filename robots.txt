@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://giovannawillwohlserra-cell.github.io/prumo/sitemap.xml
+Sitemap: https://prumoconsultoria.github.io/prumo/sitemap.xml
